@@ -3,7 +3,7 @@ var app = express()
 
 // Build Your Route Here
 app.get('/', function(req, resp){
-  const viewData = {text: "Hello, World!"}
+  const viewData = {welcomePhrase: "Hello, World from Express and EJS!"}
   resp.render('index', viewData)
 })
 
